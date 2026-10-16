@@ -1,6 +1,6 @@
 import random
 
-def get_numbers_ticket(min: int, max: input, quantity: int) -> list:
+def get_numbers_ticket(min: int, max: int, quantity: int) -> list:
     if not isinstance(min, int) or not isinstance(max, int) or not isinstance(quantity, int):
         print('All parameters must be integers')
         return []

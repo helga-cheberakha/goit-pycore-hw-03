@@ -14,9 +14,9 @@ def get_days_from_today(date: str) -> int | None:
     # Gets the datetime object for the current date and
     # extract the date without the time.
     current_date = datetime.now().date()
-    # Calculate the difference in days between the target date and the current date.
-    # Return a negative value for past dates and a positive value for future dates.
-    diff_date = target_date - current_date
+    # Calculate the difference in days between the the current date and target date.
+    # Return a positive value for past dates and a negative value for future dates.
+    diff_date = current_date - target_date
     return diff_date.days
 
 # Date in past.
